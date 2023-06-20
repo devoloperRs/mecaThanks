@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+/*font-family: 'Barlow', sans-serif;*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#thanks{
+	width: 100%;
+	height: 100vh;
+	background:  #eaeef0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.continet-full{
+	width: 70%;
+	height: 40%;
+	background: #eaeef0;
+	border-radius: 20%;
+}
+/* logo */
+
+.logo{
+	width: 100%;
+	height: 100%;
+	background-color: #eaeef0;
+	border-radius: 20%;
+}
+.loader{
+	position: relative;
+	display: flex;
+	padding: 10px 0 0 10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20%;
+	
+}
+.loader span{
+	position: relative;
+	width: 100%;
+	height: 100%;
+/*	background: ;*/
+	border: 6px solid #eaeef0; 
+	border-radius: 20%;
+	box-shadow: -8px -8px 15px rgba(255,255,255,1),
+	8px 8px  25px rgba(0,0,0,0.15);
+	overflow: hidden;
+	
+}
+.loader span::before{
+	content: '';
+	position: absolute;
+	inset:0;
+	border-radius: 20%;
+	box-shadow: inset 10px 10px 20px rgba(0,0,0,0.5) , inset -5px -5px 15px rgba(255,255,255,1);
+}
+.loader span::after{
+	content: '';
+	position: absolute;
+	inset:70px;
+	background: #eaeef0;
+	border: 3px solid #eaeef0; 
+	border-radius: 20%;
+	box-shadow: -8px -8px 25px rgba(255,255,255,1), 8px 8px 25px rgba(0,0,0,0.25),inset 3px 3px 10px rgba(0,0,0,0.15),inset -1px -1px 15px rgba(255,255,255,1)
+}
+
+.loader span i{
+	position: absolute;
+	inset:0;
+	width: 100%;
+	height:100%;
+	filter: blur(5px);
+	background: linear-gradient(#42abff , #ff4fe8,#ffeb3b );
+	animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(720px);
+	}
+}
+
+/*icon*/
+
+.food-icon{
+	position: absolute;
+	
+	inset:50px;
+	z-index: 10;
+/*	overflow:hidden;*/
+	color: #ff518c;
+	
+		
+}
+.food-icon .continer-h1-btn{
+	
+	width: 400px;
+	height: 300px;
+	position: relative;
+	right: -110px;
+	top: 150px;
+	font-family: 'Barlow', sans-serif;
+	text-transform: capitalize;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.food-icon .continer-h1-btn h1{
+	font-size: 4.5em;
+}
